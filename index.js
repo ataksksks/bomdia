@@ -36,19 +36,19 @@ if(mes < 9){
     mes = mes + 1
 }
 
-if(dSemana = 0){
+if(dSemana === 0){
     dSemana = 'domingo'
-}else if(dSemana = 1){
+}else if(dSemana === 1){
     dSemana = 'segunda-feira'
-}else if(dSemana = 2){
+}else if(dSemana === 2){
     dSemana = 'terça-feira'
-}else if(dSemana = 3){
+}else if(dSemana === 3){
     dSemana = 'quarta-feira'
-}else if(dSemana = 4){
+}else if(dSemana === 4){
     dSemana = 'quinta-feira'
-}else if(dSemana = 5){
+}else if(dSemana === 5){
     dSemana = 'sexta-feira'
-}else if(dSemana = 6){
+}else if(dSemana === 6){
     dSemana = 'sábado'
 }
 
@@ -60,3 +60,4 @@ if(dia === 18 && mes === '0'+ 6){
     evento.innerHTML = 'Feliz Aniversário!'
     container.appendChild(evento)
 }
+
