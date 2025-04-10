@@ -1,40 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-*{
-    padding: 0px;
-    margin: 0px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 body{
-    background-color: rgb(59, 98, 133);
-    text-align: center;
-    padding: 20px;
+    background-color: #608e9f;
+    color: antiquewhite;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: aliceblue;
 }
-h1{
-    font-size: 54px;
-    color: aliceblue;
+.noite{
+    background-color:#1a3f4d;
+}
+.tarde{
+    background-color:#2f5c6c;
+}
+.manha{
+    background-color:#5d9db5;
+}
+.madrugada{
+    background-color:#061e27;
 }
 
-.button{
-    border-radius: 20px;
+#botaoGatinho{
     border: none;
-    width: 100px;
-    height: 30px;
-    font-size: 24px;
-}
-.input{
     border-radius: 20px;
-    text-align: center;
-    font-size: 24px;
-    border: none;
-    height: 30px;
-}
-footer{
-    font-size: 12px;
-    color: rgb(22, 33, 44)
-    
+    height: 22px;
+    background-color: antiquewhite;
 }
