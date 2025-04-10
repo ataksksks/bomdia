@@ -1,6 +1,5 @@
 const saudacao = document.querySelector('#saudacao')
 const data = document.querySelector('#data')
-const imagem = document.createElement('img')
 const container = document.querySelector('.container')
 const evento = document.querySelector('#evento')
 let nome = 'Henrique'
@@ -82,3 +81,23 @@ botao.addEventListener('click', (e) => {
         saudacao.innerHTML = `<h1>Boa madrugada, ${nome}!</h1>`
     }
 })
+
+function atualizarRelogio() {
+    const agora = new Date();
+    let horas = agora.getHours();
+    let minutos = agora.getMinutes();
+    let segundos = agora.getSeconds();
+
+    horas = horas < 10 ? '0' + horas : horas;
+    minutos = minutos < 10 ? '0' + minutos : minutos;
+    segundos = segundos < 10 ? '0' + segundos : segundos;
+
+    const horaAtual = `${horas}:${minutos}:${segundos}`;
+    document.getElementById('relogio').textContent = horaAtual;
+}
+
+// Atualiza o relógio a cada 1 segundo
+setInterval(atualizarRelogio, 1000);
+
+// Atualiza imediatamente ao carregar
+atualizarRelogio();

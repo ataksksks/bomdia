@@ -25,3 +25,8 @@ body{
     background-color: antiquewhite;
     color: black;
 }
+#relogio{
+font-size: 32px; 
+font-weight: bold;
+max-height: 20px;
+}
