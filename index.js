@@ -72,5 +72,13 @@ botao.addEventListener('click', (e) => {
     e.preventDefault();
 
     nome = 'gatinho';
-    saudacao.innerHTML = `<h1>Agora você é o ${nome}!</h1>`
+    if(hora >= 18){
+        saudacao.innerHTML = `<h1>Boa noite, ${nome}!</h1>`
+    }else if(hora >= 12){
+        saudacao.innerHTML = `<h1>Boa tarde, ${nome}!</h1>`
+    }else if(hora >= 6){
+        saudacao.innerHTML = `<h1>Bom dia, ${nome}!</h1>`
+    }else if(hora >= 0){
+        saudacao.innerHTML = `<h1>Boa madrugada, ${nome}!</h1>`
+    }
 })
