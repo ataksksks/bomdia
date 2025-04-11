@@ -4,6 +4,13 @@ body{
     background-color: #608e9f;
     color: antiquewhite;
     font-family: "Poppins", sans-serif;
+    box-shadow: 20px;
+}
+#data{
+    font-size: 24px;
+}
+#saudacao{
+    max-height: 25px;
 }
 .noite{
     background-color:#1a3f4d;
@@ -28,5 +35,5 @@ body{
 #relogio{
 font-size: 32px; 
 font-weight: bold;
-max-height: 20px;
+max-height: 16px;
 }
